@@ -8,9 +8,10 @@ public class Human {
     }
 
     public void setAge(int age) {
-        if(age < 0 || age > 120){
-            return;
+        if (age >0 && age < 120) {
+            this.age = age;
+        } else {
+            System.out.println("Введен некорректный возраст");
         }
-        this.age = age;
     }
 }
