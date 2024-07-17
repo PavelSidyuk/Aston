@@ -10,12 +10,14 @@ public class Main {
 
         human.setAge(15);
         System.out.println(human.getAge());
-        System.out.println(human.toString());
+        human.setAge(121);
+        System.out.println(human.getAge());
 
         Field field = human.getClass().getDeclaredField("age");
         field.setAccessible(true);
         field.set(human,-1);
-
-        System.out.println(human.getAge());
+        System.out.println(human.getAge());//
+        field.set(human,-121);
+        System.out.println(human.getAge());//
     }
 }

@@ -13,9 +13,4 @@ public class Human {
         }
         this.age = age;
     }
-
-    @Override
-    public String toString() {
-        return age + "";
-    }
 }
