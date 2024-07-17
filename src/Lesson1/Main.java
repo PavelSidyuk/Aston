@@ -16,8 +16,8 @@ public class Main {
         Field field = human.getClass().getDeclaredField("age");
         field.setAccessible(true);
         field.set(human,-1);
-        System.out.println(human.getAge());//
+        System.out.println(human.getAge());
         field.set(human,-121);
-        System.out.println(human.getAge());//
+        System.out.println(human.getAge());
     }
 }
