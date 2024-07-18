@@ -18,6 +18,6 @@ public class Main {
         field.set(human,-1);
         System.out.println(human.getAge());
         field.set(human,-121);
-        System.out.println(human.getAge());
+        System.out.println(field.get(human));
     }
 }
